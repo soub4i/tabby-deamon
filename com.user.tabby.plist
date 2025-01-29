@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.tabby</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/tabby</string>
+        <string>serve</string>
+        <string>--device</string>
+        <string>metal</string>
+        <string>--model</string>
+        <string>DeepseekCoder-1.3B</string>
+        <string>--chat-model</string>
+        <string>Qwen2.5-Coder-1.5B-Instruct</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/root/Library/Logs/tabby.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/root/Library/Logs/tabby.error.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/root</string>
+</dict>
+</plist>
